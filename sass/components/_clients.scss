@@ -1,0 +1,53 @@
+.clients {
+    background-color: var(--hero-title-color);
+  
+}
+
+.clients__title {
+    @include font(700, 36px, 1.17, 0.03em);
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+   }
+
+.clients__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.clients__item {
+    width: 170px;
+    height: 92px;
+   
+}
+
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color:#AFB1B8 ;
+    
+    transition-property: border-color, color;
+    @extend %transition;
+  }
+
+  .clients__link {
+    &:hover,
+    &:focus {color: #2196F3;
+   border-color: #2196F3}
+}      
+
+
+.clients__icon {
+    fill: currentColor;
+}
+

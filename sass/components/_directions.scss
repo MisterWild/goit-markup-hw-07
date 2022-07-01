@@ -1,0 +1,49 @@
+.directions {
+    background-color: var(--hero-title-color);
+    padding-top: 0;
+   
+}
+
+.applications-list {
+    display: flex;
+}
+.applications-list__item:not(:first-child) {
+    margin-left: 30px;
+}
+.directions__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--main-title-color);
+
+    margin-bottom: 50px;
+}
+
+.top-wrap {
+    position: relative;
+
+
+}
+
+.top-wrap__text {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 224px;
+       
+    color: var(--body-background-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 1.55;
+
+   
+
+}
